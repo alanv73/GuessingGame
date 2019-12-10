@@ -15,6 +15,11 @@
 		C264DDCB23A01B990072576E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C264DDC923A01B990072576E /* LaunchScreen.storyboard */; };
 		C264DDD623A01B990072576E /* guessingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264DDD523A01B990072576E /* guessingGameTests.swift */; };
 		C264DDE123A01B990072576E /* guessingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264DDE023A01B990072576E /* guessingGameUITests.swift */; };
+		E7D9831E23A0402C006729A0 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D9831923A0402B006729A0 /* one.png */; };
+		E7D9831F23A0402C006729A0 /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D9831A23A0402B006729A0 /* three.png */; };
+		E7D9832023A0402C006729A0 /* five.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D9831B23A0402B006729A0 /* five.png */; };
+		E7D9832123A0402C006729A0 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D9831C23A0402C006729A0 /* two.png */; };
+		E7D9832223A0402C006729A0 /* four.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D9831D23A0402C006729A0 /* four.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		C264DDDC23A01B990072576E /* guessingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = guessingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C264DDE023A01B990072576E /* guessingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessingGameUITests.swift; sourceTree = "<group>"; };
 		C264DDE223A01B990072576E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D9831923A0402B006729A0 /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = one.png; path = "../../../../onedrive/#IT217-iOS/one.png"; sourceTree = "<group>"; };
+		E7D9831A23A0402B006729A0 /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = three.png; path = "../../../../onedrive/#IT217-iOS/three.png"; sourceTree = "<group>"; };
+		E7D9831B23A0402B006729A0 /* five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = five.png; path = "../../../../onedrive/#IT217-iOS/five.png"; sourceTree = "<group>"; };
+		E7D9831C23A0402C006729A0 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = two.png; path = "../../../../onedrive/#IT217-iOS/two.png"; sourceTree = "<group>"; };
+		E7D9831D23A0402C006729A0 /* four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = four.png; path = "../../../../onedrive/#IT217-iOS/four.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				C264DDBE23A01B980072576E /* AppDelegate.swift */,
 				C264DDC023A01B980072576E /* SceneDelegate.swift */,
 				C264DDC223A01B980072576E /* ViewController.swift */,
+				E7D9831B23A0402B006729A0 /* five.png */,
+				E7D9831D23A0402C006729A0 /* four.png */,
+				E7D9831923A0402B006729A0 /* one.png */,
+				E7D9831A23A0402B006729A0 /* three.png */,
+				E7D9831C23A0402C006729A0 /* two.png */,
 				C264DDC423A01B980072576E /* Main.storyboard */,
 				C264DDC723A01B990072576E /* Assets.xcassets */,
 				C264DDC923A01B990072576E /* LaunchScreen.storyboard */,
@@ -232,9 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D9832123A0402C006729A0 /* two.png in Resources */,
+				E7D9831E23A0402C006729A0 /* one.png in Resources */,
 				C264DDCB23A01B990072576E /* LaunchScreen.storyboard in Resources */,
 				C264DDC823A01B990072576E /* Assets.xcassets in Resources */,
 				C264DDC623A01B980072576E /* Main.storyboard in Resources */,
+				E7D9831F23A0402C006729A0 /* three.png in Resources */,
+				E7D9832023A0402C006729A0 /* five.png in Resources */,
+				E7D9832223A0402C006729A0 /* four.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

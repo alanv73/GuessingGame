@@ -12,25 +12,52 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lblOutput: UILabel!
     @IBOutlet weak var txtGuess: UITextField!
+    @IBOutlet weak var imgFingers: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         lblOutput.text = ""
+        txtGuess.becomeFirstResponder()
     }
-
-    @IBAction func btnGuess(_ sender: Any) {
-        let secret = arc4random_uniform(5) + 1
-        let guess = UInt32(txtGuess.text ?? "0")
-        let message: String
+    
+    @IBAction func guessClick(_ sender: Any) {
+        txtGuess.text = ""
         
-        if guess == secret {
+    }
+    
+    @IBAction func btnGuess(_ sender: Any) {
+        let handImage = [
+            1: "one.png",
+            2: "two.png",
+            3: "three.png",
+            4: "four.png",
+            5: "five.png"
+        ]
+        let secret = Int(arc4random_uniform(5)) + 1
+        let guess = Int(txtGuess.text ?? "0") ?? 0
+        let message: String
+        var guessIsGood = true
+        
+        if guess < 1 || guess > 5 {
+            message = "Invalid guess"
+            guessIsGood = false
+        } else if guess == secret {
             message = "Correct!"
         } else {
-            message = "Sorry, I am holding \(secret) fingers up"
+            message = "Sorry"
+        }
+        
+        if guessIsGood {
+            imgFingers.image = UIImage(named:handImage[Int(secret)] ?? "")
+            imgFingers.isHidden = false
+        } else {
+            imgFingers.isHidden = true
         }
         
         lblOutput.text = message
+        
+        txtGuess.resignFirstResponder()
     }
     
 }
