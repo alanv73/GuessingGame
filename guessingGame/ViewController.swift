@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var lblOutput: UILabel!
+    @IBOutlet weak var lblGuess: UILabel!
     @IBOutlet weak var txtGuess: UITextField!
     @IBOutlet weak var imgFingers: UIImageView!
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         lblOutput.text = ""
+        lblGuess.text = ""
         txtGuess.becomeFirstResponder()
     }
     
@@ -49,6 +51,8 @@ class ViewController: UIViewController {
         }
         
         if guessIsGood {
+            txtGuess.text = ""
+            lblGuess.text = "You Guessed \(guess)"
             imgFingers.image = UIImage(named:handImage[Int(secret)] ?? "")
             imgFingers.isHidden = false
         } else {
